@@ -12,7 +12,7 @@ jobs:
     # Don't trigger releases on release commits. We need this because
     # releases create new commits, and we don't want to re-release
     # based on these new commits.
-#    if: !startsWith(github.ref, 'refs/tags/v')
+    if: "!startsWith(github.ref, 'refs/tags/v')"
 
     steps:
       - name: Checkout
