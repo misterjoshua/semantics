@@ -1,11 +1,14 @@
-{{
-   "plugins": [
-     "@semantic-release/commit-analyzer",
-     "@semantic-release/release-notes-generator",
-     "@semantic-release/github",
-     ["@semantic-release/exec", {
-       "prepareCmd" : "echo",
-       "publishCmd" : "echo"
-       }]
-   ]
- }
+{
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/github",
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "echo",
+        "publishCmd": "echo"
+      }
+    ]
+  ]
+}
